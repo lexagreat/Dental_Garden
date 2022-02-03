@@ -205,6 +205,13 @@
  
  .hero-slogan__logo {
    padding-left: 75px;
+   max-width: 350px;
+   max-height: 220px;
+ }
+ 
+ .hero-slogan__logo img {
+   width: 100%;
+   height: 100%;
  }
  
  .hero-slogan__text {
@@ -537,6 +544,10 @@
  .reviews-slogan__row {
    position: relative;
    padding-bottom: 50px;
+   -webkit-box-orient: horizontal !important;
+   -webkit-box-direction: normal !important;
+       -ms-flex-direction: row !important;
+           flex-direction: row !important;
  }
  
  .reviews-slogan__row::after {
@@ -830,6 +841,26 @@
      margin-bottom: 30px;
    }
  
+   .services__image {
+     -webkit-box-ordinal-group: 4;
+         -ms-flex-order: 3;
+             order: 3;
+   }
+ 
+   .services__name {
+     -webkit-box-ordinal-group: 2;
+         -ms-flex-order: 1;
+             order: 1;
+     margin: 0;
+   }
+ 
+   .services__price {
+     margin: 15px 0;
+     -webkit-box-ordinal-group: 3;
+         -ms-flex-order: 2;
+             order: 2;
+   }
+ 
    .contacts {
      padding-top: calc(30px + 50 * (100vw - 320px) / 672);
    }
@@ -864,7 +895,7 @@
  
    .preferences__title {
      padding: 0 20px;
-     margin-bottom: calc(90px + 50 * (100vw - 320px) / 480);
+     margin-bottom: calc(60px + 80 * (100vw - 320px) / 480);
    }
  
    .preferences__link {
@@ -909,7 +940,7 @@
      -webkit-box-ordinal-group: 4;
          -ms-flex-order: 3;
              order: 3;
-     margin-bottom: calc(20px + 10 * (100vw - 320px) / 480);
+     margin-bottom: calc(10px + 20 * (100vw - 320px) / 480);
    }
  
    .preferences__description {
@@ -918,7 +949,7 @@
      -webkit-box-ordinal-group: 3;
          -ms-flex-order: 2;
              order: 2;
-     margin-bottom: calc(15px + 15 * (100vw - 320px) / 480);
+     margin-bottom: calc(10px + 20 * (100vw - 320px) / 480);
    }
  
    .footer__row {
@@ -1075,6 +1106,31 @@
    }
  }
  
+ @media (max-width: 690px) {
+   .slogan__row {
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
+   }
+ 
+   .hero-slogan__logo {
+     margin: 0;
+     margin-left: 25px;
+   }
+ 
+   .hero-slogan__row {
+     max-height: 250px;
+   }
+ 
+   .hero-slogan__text {
+     max-width: none;
+     text-align: center;
+     font-size: calc(16px + 4 * (100vw - 320px) / 200);
+     margin-top: 90px;
+   }
+ }
+ 
  @media (max-width: 530px) {
    .footer {
      height: 350px;
@@ -1082,14 +1138,19 @@
  
    .footer__row {
      padding: 0;
-     -webkit-box-orient: vertical;
-     -webkit-box-direction: normal;
-         -ms-flex-direction: column;
-             flex-direction: column;
+     -webkit-box-align: end;
+         -ms-flex-align: end;
+             align-items: flex-end;
    }
  
    .footer__link + .footer__link {
      margin-top: 30px;
+   }
+ 
+   .footer__link {
+     width: 150px;
+     padding: 30px 0;
+     text-align: center;
    }
  
    .contacts__map_laptop {
@@ -1105,26 +1166,9 @@
  }
  
  @media (max-width: 520px) {
-   .slogan__row {
-     -webkit-box-orient: vertical;
-     -webkit-box-direction: normal;
-         -ms-flex-direction: column;
-             flex-direction: column;
-   }
- 
    .hero-slogan {
      padding-right: 10px;
      padding-bottom: 50px;
-   }
- 
-   .hero-slogan__logo {
-     margin-right: -15px;
-     margin-bottom: 20px;
-   }
- 
-   .hero-slogan__text {
-     max-width: none;
-     text-align: center;
    }
  }
  
@@ -1143,6 +1187,14 @@
  }
  
  @media (max-width: 500px) {
+   .preferences__title {
+     font-size: calc(16px + 8 * (100vw - 320px) / 180);
+   }
+ 
+   .preferences__item_inner {
+     border-radius: 15px;
+   }
+ 
    .preferences__image {
      max-width: calc(250px + 100 * (100vw - 320px) / 180);
    }
@@ -1171,7 +1223,18 @@
    }
  }
  
+ @media (max-width: 360px) {
+   .footer__row {
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
+   }
+ }
+ 
  .webp .hero-main { background-image: url(../img/main/main-bg.webp); }
  
  .webp .footer { background: url(../img/main/footer-bg.webp) center/cover no-repeat; }
- 

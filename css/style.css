@@ -204,7 +204,7 @@ h6 {
 }
 
 .hero-slogan__logo {
-  padding-left: 75px;
+  margin-left: 75px;
   max-width: 350px;
   max-height: 220px;
 }
@@ -727,6 +727,10 @@ h6 {
 }
 
 @media (max-width: 1200px) {
+  .hero-slogan__logo {
+    margin-left: 0;
+  }
+
   .preferences__image {
     max-width: 280px;
   }
@@ -1071,6 +1075,10 @@ h6 {
   .header__list {
     display: block;
     padding-left: 30px;
+  }
+
+  .header__list a::after {
+    display: none;
   }
 
   .header__list li {

@@ -319,7 +319,7 @@
  
  .footer {
    height: calc(250px + 140 * (100vw - 320px) / 1600);
-   background: url(../img/main/footer-bg.png) center/cover no-repeat;
+   background: url(../img/main/footer-bg_new.png) center/cover no-repeat;
    position: relative;
    padding-top: calc(110px + 50 * (100vw - 1200px) / 1600);
  }
@@ -439,6 +439,8 @@
  .member__image {
    border-radius: 25px;
    overflow: hidden;
+   max-width: 480px;
+   max-height: 600px;
  }
  
  .member__image img {
@@ -1245,4 +1247,4 @@
  
  .webp .hero-main { background-image: url(../img/main/main-bg_new.webp); }
  
- .webp .footer { background: url(../img/main/footer-bg.webp) center/cover no-repeat; }
+ .webp .footer { background: url(../img/main/footer-bg_new.webp) center/cover no-repeat; }

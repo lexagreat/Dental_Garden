@@ -222,8 +222,11 @@
    background-image: url(../img/main/main-bg_new.png);
    background-size: cover;
    background-position: center;
-   -webkit-box-shadow: 0px 0px 48px -18px #C5894D, inset 0px 0px 7px rgba(197, 137, 77, 0.2);
-           box-shadow: 0px 0px 48px -18px #C5894D, inset 0px 0px 7px rgba(197, 137, 77, 0.2);
+   /* -webkit-box-shadow: 0px 0px 48px -18px #C5894D, inset 0px 0px 7px rgba(197, 137, 77, 0.2); */
+           /* box-shadow: 0px 0px 48px -18px #C5894D, inset 0px 0px 7px rgba(197, 137, 77, 0.2); */
+   -webkit-box-shadow: 0px 0px 48px -18px rgba(166, 204, 179, 0.23) inset 0 0 7px rgba(166, 204, 179, 1);
+   -moz-box-shadow: 0px 0px 48px -18px rgba(166, 204, 179, 0.23) inset 0 0 7px rgba(166, 204, 179, 1);
+   box-shadow: 0px 0px 48px -18px rgba(166, 204, 179), inset 0 0 7px rgba(166, 204, 179, 1);
    padding-top: 350px;
    padding-bottom: 450px;
  }
